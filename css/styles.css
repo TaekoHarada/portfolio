@@ -1,0 +1,180 @@
+/* Reset */
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(36, 36, 36);
+  color: white;
+  font-family: "Source Code Pro", monospace, sans-serif;
+  line-height: 1.5;
+  font-size: 120%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Underline animation  */
+.hover-underline-animation {
+  /* display: inline-block; */
+  position: relative;
+  /* color: cyan; */
+}
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: cyan;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  /* transform-origin: bottom left; */
+}
+
+#sideNav {
+  position: fixed;
+  /* color: rgb(5, 237, 255); */
+  color: cyan;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 100vh;
+}
+
+.container {
+  padding-left: 25%;
+  width: 75%;
+}
+
+#sideNav .name {
+  font-size: 1.3rem;
+}
+
+#sideNav .myface {
+  width: 100px;
+  height: auto;
+  border: 3px solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+}
+
+#sideNav .myface:hover {
+  opacity: 0.8;
+}
+
+#sideNav .nav-item {
+  margin: 10px;
+}
+
+#sideNav .navbar {
+  margin-top: 20px;
+}
+
+.resume-section-content {
+  padding: 6% 10%;
+}
+
+.section-title {
+  color: rgb(5, 237, 255);
+  /* background-color: black; */
+}
+
+.description {
+  margin: 20px 0;
+}
+
+#about .resume-section-content {
+  height: 75vh;
+  padding-top: 20vh;
+}
+#about h1 {
+  font-size: 2.5em;
+  margin-bottom: 5vh;
+  /* color: cyan; */
+  color: rgb(5, 237, 255);
+}
+#about .social-icon {
+  font-size: 2rem;
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.detail-title {
+  background-color: black;
+}
+
+.detail-title h3 {
+  width: 60%;
+  font-size: 1.5rem;
+  background-color: black;
+}
+.detail-title p {
+  padding-top: 5px;
+  width: 40%;
+  text-align: right;
+  /* background-color: blue; */
+}
+.detail-content {
+  margin-top: 60px;
+}
+
+#projects .project_screenshot {
+  width: 300px;
+  height: 188px;
+  opacity: 0.9;
+}
+
+#projects .project_screenshot:hover {
+  opacity: 0.7;
+}
+
+#projects .social-icon:hover {
+  /* border-bottom: 1px solid white; */
+  opacity: 0.7;
+}
+
+#education .detail-title h3 {
+  width: 90%;
+}
+
+#skills ul {
+  width: 35%;
+}
+
+#skills li {
+  margin-bottom: 5px;
+}
+
+#experience ul {
+  margin-top: 10px;
+}
